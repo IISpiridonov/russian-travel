@@ -1,0 +1,131 @@
+@import url(../vendor/normalize.css);
+
+@import url(../vendor/font.css);
+@import url(../blocks/page/page.css);
+@import url(../blocks/content/content.css);
+@import url(../blocks/link/link.css);
+
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/header/__lang-link/header__lang-link.css);
+@import url(../blocks/header/__lang-links/header__lang-links.css);
+@import url(../blocks/header/__lang-link/header__lang-link_eng.css);
+@import url(../blocks/header/__lang-link/header__lang-link_rus.css);
+
+@import url(../blocks/lead/lead.css);
+@import url(../blocks/lead/__title/lead__title.css);
+@import url(../blocks/lead/__subtitle/lead__subtitle.css);
+@import url(../blocks/lead/__picture/lead__picture.css);
+@import url(../blocks/lead/__caption/lead__caption.css);
+
+@import url(../blocks/intro/intro.css);
+@import url(../blocks/intro/__title/intro__title.css);
+@import url(../blocks/intro/__main-text/intro__main-text.css);
+@import url(../blocks/intro/__list/intro__list.css);
+@import url(../blocks/intro/__list-item/intro__list-item.css);
+@import url(../blocks/intro/__list-title/intro__list-title.css);
+
+@import url(../blocks/gallery/gallery.css);
+@import url(../blocks/gallery/__item/gallery__item.css);
+
+@import url(../blocks/places/places.css);
+@import url(../blocks/place/place.css);
+@import url(../blocks/place/__image/place__image.css);
+@import url(../blocks/place/__text/place__text.css);
+@import url(../blocks/place/__title/place__title.css);
+@import url(../blocks/place/__website-adress/place__website-adress.css);
+@import url(../blocks/place/__website-link/place__website-link.css);
+@import url(../blocks/place/__website/place__website.css);
+
+@import url(../blocks/cover/cover.css);
+@import url(../blocks/cover/__title/cover__title.css);
+@import url(../blocks/cover/__subtitle/cover__subtitle.css);
+@import url(../blocks/cover/__back/cover__back.css);
+@import url(../blocks/cover/__inscription/cover__inscription.css);
+
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__author/footer__author.css);
+@import url(../blocks/footer/__link/footer__link.css);
+@import url(../blocks/footer/__links/footer__links.css);
+@import url(../blocks/footer/__container/footer__container.css);
+
+
+
+
+/* Основной код для разрешения 1024px */
+@media screen and (min-width: 2560px) {
+    /* стили для больших мониторов с разрешением 4K */
+}
+@media screen and (min-width: 1440px) {
+    /* стили для больших настольных компьютеров и ноутбуков */
+}
+@media screen and (max-width: 1024px) {
+    /* стили для планшета в альбомной ориентации */
+}
+@media screen and (max-width: 768px) {
+    /* стили для планшета */
+}
+@media screen and (max-width: 425px) {
+    /* стили для широкого смартфона */
+}
+@media screen and (max-width: 375px) {
+    /* стили для среднего смартфона */
+}
+@media screen and (max-width: 320px) {
+    /* стили для малого смартфона */
+}
+
+/*На практике не все эти медиазапросы могут понадобиться: иногда дизайн предполагает изменение стилей только на некоторых разрешениях из списка. Часто вам придётся придумывать свои условия, исходя из специфики макета. Нужно обсудить точки перелома и поведение страницы с дизайнером.
+Помните, что условия ограничения ширины можно комбинировать с другими:*/
+
+@media screen and (max-width: 320px) {
+    /* стили для мониторов с максимальной шириной 320 пикселей */
+}
+
+@media all and (max-width: 320px) {
+    /* стили для любых типов устройств с максимальной шириной 320 пикселей */
+}
+
+/*Другой интересный момент — вёрстка макетов под ландшафтную ориентацию устройств. В списке условий, применимых к медиазапросам, есть orientation со значениями portrait (англ. «портретная») и landscape (англ. «ландшафтная»). На деле поддержка браузерами этого свойства оставляет желать лучшего. Поэтому приходится комбинировать условия минимальных ширины и высоты. Вот например, условие, которое описывает горизонтальный смартфон модели iPhone 5:*/
+
+@media screen and (max-width: 568px) and (max-height: 320px) {
+    /* стили для iphone 5 */
+    .content__column {
+        width: 100%; 
+        margin-bottom: 60px; 
+        display: flex; 
+        justify-content: space-between;
+        align-items: flex-start; 
+    }
+    
+    .content__column-image {
+        width: 30%; 
+        padding-bottom: 30%;
+    }
+    
+    .column__description {
+        width: calc(70% - 40px); 
+    }
+    
+    .content__column-title {
+        margin-top: 0;
+        font-size: 1.5em;
+        margin-bottom: 18px;
+    }
+    .column__quote {
+        font-size: 0.9em;
+    }
+    
+    .column__quote-cite {
+        font-size: 0.7em;
+        line-height: 1.5;
+    }
+    
+    .share {
+        margin-top: 18px;
+    }
+    
+    .share__text {
+        font-size: 1em;
+    }
+}
