@@ -2,7 +2,6 @@
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
-    line-height: 18px;
-    list-style: none;
-    /* or 150% */
+    line-height: 150%;
+    list-style: none;    
 }

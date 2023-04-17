@@ -9,12 +9,12 @@
 @import url(../blocks/header/__logo/header__logo.css);
 @import url(../blocks/header/__lang-link/header__lang-link.css);
 @import url(../blocks/header/__lang-links/header__lang-links.css);
-@import url(../blocks/header/__lang-link/header__lang-link_eng.css);
-@import url(../blocks/header/__lang-link/header__lang-link_rus.css);
+@import url(../blocks/header/__lang-link/_push/header__lang-link_push.css);
 
 @import url(../blocks/lead/lead.css);
 @import url(../blocks/lead/__title/lead__title.css);
 @import url(../blocks/lead/__subtitle/lead__subtitle.css);
+@import url(../blocks/lead/__figure/lead__figure.css);
 @import url(../blocks/lead/__picture/lead__picture.css);
 @import url(../blocks/lead/__caption/lead__caption.css);
 
@@ -32,6 +32,7 @@
 @import url(../blocks/place/place.css);
 @import url(../blocks/place/__image/place__image.css);
 @import url(../blocks/place/__text/place__text.css);
+@import url(../blocks/place/__paragraph/place__paragraph.css);
 @import url(../blocks/place/__title/place__title.css);
 @import url(../blocks/place/__website-adress/place__website-adress.css);
 @import url(../blocks/place/__website-link/place__website-link.css);
@@ -51,46 +52,9 @@
 
 
 
-
-/* Основной код для разрешения 1024px */
-@media screen and (min-width: 2560px) {
-    /* стили для больших мониторов с разрешением 4K */
-}
-@media screen and (min-width: 1440px) {
-    /* стили для больших настольных компьютеров и ноутбуков */
-}
-@media screen and (max-width: 1024px) {
-    /* стили для планшета в альбомной ориентации */
-}
-@media screen and (max-width: 768px) {
-    /* стили для планшета */
-}
-@media screen and (max-width: 425px) {
-    /* стили для широкого смартфона */
-}
-@media screen and (max-width: 375px) {
-    /* стили для среднего смартфона */
-}
-@media screen and (max-width: 320px) {
-    /* стили для малого смартфона */
-}
-
-/*На практике не все эти медиазапросы могут понадобиться: иногда дизайн предполагает изменение стилей только на некоторых разрешениях из списка. Часто вам придётся придумывать свои условия, исходя из специфики макета. Нужно обсудить точки перелома и поведение страницы с дизайнером.
-Помните, что условия ограничения ширины можно комбинировать с другими:*/
-
-@media screen and (max-width: 320px) {
-    /* стили для мониторов с максимальной шириной 320 пикселей */
-}
-
-@media all and (max-width: 320px) {
-    /* стили для любых типов устройств с максимальной шириной 320 пикселей */
-}
-
-/*Другой интересный момент — вёрстка макетов под ландшафтную ориентацию устройств. В списке условий, применимых к медиазапросам, есть orientation со значениями portrait (англ. «портретная») и landscape (англ. «ландшафтная»). На деле поддержка браузерами этого свойства оставляет желать лучшего. Поэтому приходится комбинировать условия минимальных ширины и высоты. Вот например, условие, которое описывает горизонтальный смартфон модели iPhone 5:*/
-
-@media screen and (max-width: 568px) and (max-height: 320px) {
+/*@media screen and (max-width: 568px) and (max-height: 320px) {
     /* стили для iphone 5 */
-    .content__column {
+    /*.content__column {
         width: 100%; 
         margin-bottom: 60px; 
         display: flex; 
@@ -128,4 +92,4 @@
     .share__text {
         font-size: 1em;
     }
-}
+}*/

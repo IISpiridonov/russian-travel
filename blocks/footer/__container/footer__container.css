@@ -4,14 +4,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 0 auto 0;
     padding: 0;
 } 
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 760px) {
     .footer__container {
         flex-direction: column;
         align-items: start;
-        justify-content: left;
+        justify-content: left;        
     }
 }
+

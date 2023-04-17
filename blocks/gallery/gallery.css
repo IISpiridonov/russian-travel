@@ -4,21 +4,23 @@
     gap: 16px;
     width: 100%;
     max-width: 1184px;
-    margin: 0px 0px 92px 0px;
+    margin: 0px 48px 92px;;
     box-sizing: border-box;
 }
 
 @media screen and (max-width: 1024px) {
     .gallery {
+        max-width: 928px;
         gap: 14px;
+        padding: 0;       
     }
 }
 
 @media screen and (max-width: 768px) {
     .gallery {
         gap: 16px;
-        padding: 0 24px;
-        margin-bottom: 88px;
+        margin: 0px 24px 88px;
+        max-width: 720px;
     }
 }
 
@@ -26,8 +28,8 @@
     .gallery {
         row-gap: 12px;
         column-gap: 0px;
-        padding: 0 16px;
-        margin-bottom: 64px;
+        margin: 0px 16px 64px;
+        max-width: 288px;
     }
-}
+} 
 
