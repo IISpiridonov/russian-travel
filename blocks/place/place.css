@@ -24,6 +24,7 @@
       grid-template-columns: 340px 1fr;
       grid-column-gap: 28px;
       margin-bottom: 73px;
+      grid-row-gap: 48px;
     }
   }
   
@@ -37,7 +38,14 @@
       "image"
       "text";
       grid-row-gap: 32px;
-      margin-bottom: 50px;
+      margin: 0 auto 50px; 
+      justify-items: center;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    .place {
+      justify-items: normal;      
     }
   }
 
