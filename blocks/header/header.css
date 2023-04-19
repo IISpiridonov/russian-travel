@@ -1,18 +1,18 @@
 .header {  
-    max-width: 1184px; 
+    max-width: calc(100%*0.925); 
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    margin: 28px 48px 56px;
+    margin: 28px 48px 56px;    
 }
 
 @media screen and (max-width: 1024px) {
     .header {
       margin: 28px 48px 48px;      
       padding: 0;
-      max-width: 928px;      
+      max-width: calc(100%*0.90625);      
     }
   }
 

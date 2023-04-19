@@ -2,7 +2,7 @@
     max-width: 460px;
     width: 100%;
     grid-area: image;
-    
+    padding: 0;
 }
 
 @media screen and (max-width: 1024px) {
@@ -19,7 +19,8 @@
 
 @media screen and (max-width: 680px) {
     .place__image {
-        padding-left: 24px;
+        padding-left: 16px;
+        max-width: calc((100%/1.5));
     }
 }
 
